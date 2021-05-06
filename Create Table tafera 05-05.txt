@@ -1,0 +1,21 @@
+CREATE TABLE Estado
+(
+    idEstado varchar(2) PRIMARY KEY,
+    nome varchar(30)    
+ );
+ 
+ CREATE TABLE Municipio
+ (
+     fkEstado varchar (2),
+     FOREIGN KEY (fkEstado) REFERENCES Estado(idEstado),
+     
+     nome varchar(30)
+ );
+
+INSERT INTO Estado (nome, idEstado) VALUES ('São Paulo', 'SP');
+INSERT INTO Estado (nome, idEstado) VALUES ('Rio de Janeiro', 'RJ');
+
+INSERT INTO Municipio (nome, fkEstado) VALUES ('Hortolândia','SP');
+INSERT INTO Municipio (nome, fkEstado) VALUES ('Niterói','RJ');
+
+SELECT * FROM Municipio;
