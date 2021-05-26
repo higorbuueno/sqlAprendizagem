@@ -71,6 +71,6 @@ select
 *
 from municipio as m
 -- ANALISAR // PESQUISAR COMO FUNCIONA -->>> full  join estado as e on e.idEstado = m.fk_idEstado  -- PUXA TUDO, MESMO COM VALORES NULOS 
-;
+; -- NÃO CONSEGUI ENCONTRAR UM JEITO DE PUXAR TUDO! Ver com o professor depois.
 -- ----------------------------------------
 
