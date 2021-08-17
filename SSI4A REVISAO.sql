@@ -48,7 +48,7 @@ insert into AlunoXDisciplina(fk_idDisciplina, fk_idAluno)
 values
 (1,1),
 (1,2),
-(2,1);
+(2,1);countriescountries
 
 select * from AlunoXDisciplina as AD
 INNER JOIN	Disciplina as d on d.idDisciplina = AD.fk_idDisciplina
